@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -23,6 +24,37 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+/****** Header ******/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+.logo {
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 68px;
+}
+
+nav li {
+    margin-top: 18px;
+}
+
+nav a {
+    padding-top: 16px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 a {
