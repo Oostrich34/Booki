@@ -100,6 +100,65 @@ input {
     display: none;
 }
 
+/***** Filtres ******/
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.filters-title {
+    margin: 0;
+    padding-top: 15px;
+}
+
+.filter-choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-filter {
+    border: 2px solid var(--main-bg-color);
+    border-radius: 30px;
+}
+
+.btn-filter:hover {
+    background: var(--filter-bg-color);
+}
+
+.btn-filter i {
+    display: flex;
+    padding: 15px;
+}
+
+.btn-filter h4 {
+    margin: 0;
+    padding-left: 10px;
+    color: black;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.fa-info {
+    display: flex;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text {
+    margin: 0 0 0 15px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -205,6 +264,10 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filters-title {
+        width: 100%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -297,5 +360,9 @@ a {
         color: white;
         padding: 0;
         background: none;
+    }
+    
+    .btn-filter {
+        width: 45%;
     }
 }
